@@ -6,32 +6,30 @@
 
 include_once 'search_node_test_settings.features.inc';
 
-function search_node_test_settings_post_features_enable_feature($component) {
-  if ($component == 'taxonomy') {
-    taxonomy_term_save((object) array(
-      'name' => 'First',
-      'vid' => '2',
-    ));
-    taxonomy_term_save((object) array(
-      'name' => 'Secound',
-      'vid' => '2',
-    ));
-    taxonomy_term_save((object) array(
-      'name' => 'Third',
-      'vid' => '2',
-    ));
-    taxonomy_term_save((object) array(
-      'name' => 'Fourth',
-      'vid' => '2',
-    ));
+function search_node_test_settings_modules_enabled() {
+  taxonomy_term_save((object) array(
+    'name' => 'First',
+    'vid' => '2',
+  ));
+  taxonomy_term_save((object) array(
+    'name' => 'Second',
+    'vid' => '2',
+  ));
+  taxonomy_term_save((object) array(
+    'name' => 'Third',
+    'vid' => '2',
+  ));
+  taxonomy_term_save((object) array(
+    'name' => 'Fourth',
+    'vid' => '2',
+  ));
 
-    taxonomy_term_save((object) array(
-      'name' => 'Angular',
-      'vid' => '3',
-    ));
-    taxonomy_term_save((object) array(
-      'name' => 'Javascript',
-      'vid' => '3',
-    ));
-  }
+  taxonomy_term_save((object) array(
+    'name' => 'Angular',
+    'vid' => '3',
+  ));
+  taxonomy_term_save((object) array(
+    'name' => 'Javascript',
+    'vid' => '3',
+  ));
 }
