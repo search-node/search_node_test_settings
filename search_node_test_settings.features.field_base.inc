@@ -74,7 +74,7 @@ function search_node_test_settings_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'teknologi',
+          'vocabulary' => 'technology',
           'parent' => 0,
         ),
       ),
