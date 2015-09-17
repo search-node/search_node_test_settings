@@ -7,6 +7,17 @@
 include_once 'search_node_test_settings.features.inc';
 
 function search_node_test_settings_modules_enabled() {
+  taxonomy_vocabulary_save((object) array(
+    'name' => 'Level',
+    'description' => 'Level',
+    'machine_name' => 'level',
+  ));
+  taxonomy_vocabulary_save((object) array(
+    'name' => 'Technology',
+    'description' => 'Technology',
+    'machine_name' => 'technology',
+  ));
+
   taxonomy_term_save((object) array(
     'name' => 'First',
     'vid' => '2',
