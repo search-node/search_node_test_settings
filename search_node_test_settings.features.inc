@@ -58,7 +58,8 @@ function search_node_test_settings_default_search_api_index() {
         "field_teknologi" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "nid" : { "type" : "integer" },
         "search_api_language" : { "type" : "string" },
-        "title" : { "type" : "text" }
+        "title" : { "type" : "text" },
+        "type" : { "type" : "string" }
       },
       "data_alter_callbacks" : {
         "search_api_alter_bundle_filter" : {
